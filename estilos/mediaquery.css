@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@media screen and (max-width:500px) {
+    
+    section>div.container{
+        height: 600px;
+    }
+    section>div.container>div.bimagem{
+    height: 220px;
+    width: 256px;
+    background: url(../imagens/supernatural3.jpg);
+    border-radius: 15px;
+    position: absolute;
+    inset: 60% 1% 1% 15%;
+    border: 2px solid rgb(150, 142, 142);
+    }
+
+}
