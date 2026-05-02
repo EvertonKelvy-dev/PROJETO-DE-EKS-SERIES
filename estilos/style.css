@@ -55,6 +55,7 @@ header > p{
 section>div.container{
     background-color: black;
     height: 300px;
+    
     padding:10px;
     display: flex;
     flex-direction: column;
@@ -99,8 +100,3 @@ section>#titulo2{
     text-align: center;
     color: #fff;
 }
-
-.section>div.container2{
-
-}
-   

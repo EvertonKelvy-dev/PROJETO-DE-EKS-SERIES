@@ -1,0 +1,29 @@
+
+
+.container{
+    background-color: crimson;
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+    
+    
+  
+
+    
+
+}
+
+.item{
+    background-color: cornsilk;
+   
+    color: #000000;
+    font-size:22px;
+    height: 100px;
+    width: 100px;
+    border-radius:10px;
+}
