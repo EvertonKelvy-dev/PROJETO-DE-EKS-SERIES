@@ -1,12 +1,60 @@
 @charset "UTF-8";
 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 @media screen and (max-width:500px) {
+
+    header{
+    background-image: linear-gradient( to right, black,  rgb(77, 0, 0));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    
+   }
+
+   
+header > h1{
+    color: rgb(182, 148, 148);
+}
+
+header > p> a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: none;
+}
+
+header > p > a:hover{
+    text-decoration: underline;
+    color: brown;
+    transition: all ease-in-out 0.2s;
+}
+
+header > p{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+   
+}
+header > p > i.material-symbols-outlined{
+    color: #fff;
+    justify-items: flex-start;
+    display: block;
+}
     
     section>div.container{
         height: 600px;
+        padding: 30px;
+        text-align: justify;
     }
     section>div.container>div.bimagem{
-    height: 220px;
+    height: 256px;
     width: 256px;
     background: url(../imagens/supernatural3.jpg);
     border-radius: 15px;
@@ -15,4 +63,35 @@
     border: 2px solid rgb(150, 142, 142);
     }
 
+}
+
+@media screen  and (min-width:500px) and (max-width:1114px){
+    
+    section>div.container{
+        height: 500px;
+    }
+    section>div.container>div.bimagem{
+    height: 256px;
+    width: 256px;
+    background: url(../imagens/supernatural3.jpg);
+    border-radius: 15px;
+    position: absolute;
+    inset: 54% 1% 1% 24%;
+    border: 2px solid rgb(150, 142, 142)
+}
+}
+
+@media screen and (min-width:1114px) and (max-width:1200px){
+    section>div.container{
+        height: 500px;
+    }
+    section>div.container>div.bimagem{
+    height: 256px;
+    width: 256px;
+    background: url(../imagens/supernatural3.jpg);
+    border-radius: 15px;
+    position: absolute;
+    inset: 50% 1% 1% 10%;
+    border: 2px solid rgb(150, 142, 142)
+}
 }
