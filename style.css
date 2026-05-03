@@ -7,13 +7,22 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root{
+    --cor0-Preto:#0F0F0F;
+    --cor1-Amarelo:#FFD60A;
+    --cor2-Cinza:#2b2b2b;
+    --cor3-Branco:#ffffff;
+}
+
 body,html{
     min-height: 100vh;
+    background-color: #312e2e6b;
+    
 
 }
 
 header{
-    background-color: rgb(0, 0, 0);
+    background-color:var(--cor2-Cinza);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,3 +51,31 @@ header{
     color: #ffffff;
     
 }
+
+/*MAIN*/
+/*DISPLAY FLEX SEMPRE FUNCIONARÁ EM CONTAINERS PAI
+ SE NÃO EXPANDIR LEMBRE SE O ELEMENTO ESTÁ OCUPANDO A LARGURA TODA TELA*/
+section{
+    background-color: rgba(60, 60, 65, 0.267) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 2% 1% 2%;
+    padding: 2px;
+}
+
+.list01-films{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 50px;
+    padding: 50px;
+    background-color: #29282541;
+    width: 100%;
+}
+
+.list01-films img{
+     height: 150px;
+     width: 150px;
+     border-radius: 20px;
+}
+
