@@ -28,6 +28,7 @@ header{
     justify-content: center;
     gap: 10px;
     height: 100px;
+
 }
 
 .h1header{
@@ -55,27 +56,52 @@ header{
 /*MAIN*/
 /*DISPLAY FLEX SEMPRE FUNCIONARÁ EM CONTAINERS PAI
  SE NÃO EXPANDIR LEMBRE SE O ELEMENTO ESTÁ OCUPANDO A LARGURA TODA TELA*/
+
+section#sprincipal{
+    margin: 0;
+
+}
+
 section{
     background-color: rgba(60, 60, 65, 0.267) ;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1% 2% 1% 2%;
-    padding: 2px;
+    margin: 10% 2% 1% 2%;
+    padding: 20px;
+}
+
+.principal{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+   
+}
+
+.principal img{
+   overflow-x: hidden;
+   width: 100%;
+   height: 100%;
+
 }
 
 .list01-films{
     display: flex;
-    flex-wrap: wrap-reverse;
-    gap: 50px;
+    flex-flow:nowrap;
+    gap: 40px;
     padding: 50px;
     background-color: #29282541;
     width: 100%;
+    justify-content: center;
+    margin-top: 3px;
 }
 
 .list01-films img{
-     height: 150px;
-     width: 150px;
-     border-radius: 20px;
+    height:120px;
+    width:120px; 
+    border-radius: 20px;
+    object-fit: cover;
+
+     
 }
 
