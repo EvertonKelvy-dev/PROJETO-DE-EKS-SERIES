@@ -16,7 +16,7 @@
 
 body,html{
     min-height: 100vh;
-    background-color: #1a06066b;
+    background-color: #00144b;
     
 
 }
@@ -63,13 +63,18 @@ section#sprincipal{
 }
 
 section{
-    background-color: rgba(60, 60, 65, 0.267) ;
+    background-color: rgba(26, 26, 109, 0.267) ;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10% 2% 1% 2%;
+    margin: 10% 2% 2% 2%;
     padding: 20px;
     border-radius: 10px;
+}
+
+section>h2{
+    color:white;
+    
 }
 
 .principal{
@@ -88,14 +93,14 @@ section{
 
 .list01-films{
     display: flex;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    gap: 40px;
+    gap: 10px;
     padding: 50px;
-    background-color: #29282541;
+    background-color: #000000;
     width: 100%;
-    height: 100%;
+    height: 50%;
     justify-content: center;
     margin-top: 3px;
     border-radius: 10px;
@@ -104,11 +109,16 @@ section{
 .list01-films>img{
     height:300px;
     width:300px; 
-    border-radius:100px;
     object-fit: contain;
+    border: 1px solid black;
    
-    flex-shrink: 0;
-
+    
      
+}
+.list01-films>img:hover{
+    border:2px solid white;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
 }
 
