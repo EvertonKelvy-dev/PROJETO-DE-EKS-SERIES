@@ -16,29 +16,45 @@
 
 body,html{
     min-height: 100vh;
-    background-color: #00144b;
+    background-color: #000000;
     
 
 }
 
 header{
-    background-color:#460000;
-    display: flex;
-    justify-content: space-between;
-    height: 120px;
-
+    background-color:#04183d;
+    height: 150px;
+    display:flex;
+    padding:5px;
+    justify-content:space-between;
+    align-items: center;
 }
-i{
-    color:rgb(212, 206, 206);
-    display: flex;
-    height: 200px;
+
+div.left{
+   display: flex;
+   align-items: center;
+   gap:55px
+  
+
    
+}
+div.right{
+    display: flex;
+  
+   
+}
+
+div.bottom{
+    
+}
+
+i{
+  color:white;
+  font-size: 1.5em;
 }
 
 .h1header{
     color: #ffffff;
-    align-self: center;
-    display:inline;
     
     
 }
@@ -66,17 +82,32 @@ i{
 
 section#sprincipal{
     margin: 0;
+    margin-top:10px;
 
+}
+div.principal{
+    background-color: #ffd60a00;
+}
+div.principal > img{
+    width: 100%;
+    height: 100%;
+}
+
+div.principal > img:hover{
+    border:2px solid #fff;
+    transition: ease 0.5s;
+    cursor:pointer;
 }
 
 section{
-    background-color: rgba(26, 26, 109, 0.267) ;
+    background-color: rgba(76, 59, 155, 0.267) ;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10% 2% 2% 2%;
     padding: 20px;
     border-radius: 10px;
+    height: 100%;
 }
 
 section>h2{
@@ -105,7 +136,7 @@ section>h2{
     white-space: nowrap;
     gap: 50px;
     padding: 50px;
-    background-color: #103b3b9a;
+    background-color: #5375759a;
     width: 100%;
     height: 50%;
     margin-top: 3px;
@@ -113,9 +144,10 @@ section>h2{
 }
 
 .list01-films>img{
-    height:200px;
-    width:200px; 
+    height:100%;
+    width:100%; 
     object-fit: contain;
+    transition:0.3s;
   
    
     
@@ -123,8 +155,9 @@ section>h2{
 }
 .list01-films>img:hover{
     border:3px solid white;
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     cursor: pointer;
+    transform:scale(1.05);
 }
 
